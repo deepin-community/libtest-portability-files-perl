@@ -1,0 +1,9 @@
+---
+Archive: CPAN
+Bug-Database: https://rt.cpan.org/Dist/Display.html?Queue=Test-Portability-Files
+Bug-Submit: bug-test-portability-files@rt.cpan.org
+Contact: Sébastien Aperghis-Tramoni <sebastien@aperghis.net>, Alexander Hartmaier
+  <abraxxa@cpan.org>
+Name: Test-Portability-Files
+Repository: https://github.com/abraxxa/Test-Portability-Files.git
+Repository-Browse: https://github.com/abraxxa/Test-Portability-Files

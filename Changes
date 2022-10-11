@@ -1,0 +1,55 @@
+Revision history for Test-Portability-Files
+
+0.10      2019-01-06 15:43:08+01:00 Europe/Vienna
+        - update POD about windows reserved file tests
+        - add tests for windows reserved file tests
+        - fix bug with windows reserved file tests so that files like "con.dat.txt" will fail
+        - add missing error text for windows reserved tests
+        - add Pod::Weaver configuration
+
+0.09      2017-12-31 11:30:04+01:00 Europe/Vienna
+        - fix regex for windows reserved files (RT#123972)
+        - add tests, now requires Perl 5.008
+
+0.08      2017-12-30 14:39:55+01:00 Europe/Vienna
+        - add windows_reserved option to test for Windows reserved filenames
+
+0.07      2016-09-21 23:49:46+02:00 Europe/Vienna
+        - relax the ansi_chars check to allow for . and _ as the leading
+          character of a filename
+
+0.06      2012-11-12 19:24:46 Europe/Vienna
+        - created git repository on github.com
+        - converted to Dist::Zilla
+        - fixed options cannot take a false value (RT#21631)
+        - disabled AmigaOS and Mac OS Classic tests by default because they are
+          no longer supported by Perl itself (RT#12182)
+        - updated synopsis to show recommended author-only usage (RT#43948)
+
+0.05    2004.11.21
+        Bugfix: corrected test for special chars
+        Bugfix: disabled calling test_name_portability() on individual 
+        directory names
+
+0.04    2004.10.20
+        Bugfix: now using ExtUtils::Manifest::maniread() to read MANIFEST.
+
+0.03    2004.09.25
+        Directory names are also tested in normal mode. 
+        Added test_dir_noext to check that directories have no extension. 
+        Corrected several typos and mistakes in the documentation. 
+
+0.02_01 2004.07.28
+        Small changes in the documentation.
+        Added test script t/01basic.t
+
+0.02    2004.07.04
+        Added test_symlink to check if a file is not a symbolic link. 
+        Added test_vms_length to check against VMS limitations. 
+        Added test_amiga_length to check against AmigaOS limitations. 
+        Added section "SEE ALSO".
+        Corrected my email address (d'oh!)
+
+0.01    2004.06.26
+        First version, released on an unsuspecting world.
+
